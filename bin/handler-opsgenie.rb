@@ -77,7 +77,7 @@ class Opsgenie < Sensu::Handler
   end
 
   def post_to_opsgenie(action = :create, params = {})
-    params['customerKey'] = @json_config['customerKey']
+    params['apiKey'] = @json_config['customerKey'] || @json_config['apiKey']
 
     # override source if specified, default is ip
     params['source'] = @json_config['source'] if @json_config['source']
