@@ -18,7 +18,7 @@
 ```json
 {
   "opsgenie": {
-    "customerKey": "the-key",
+    "apiKey": "the-key",
     "teams": ["teams"],
     "recipients": "the-recipients",
     "source": "alert-source",
